@@ -1,7 +1,6 @@
 import Container from "../container/Container";
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import background from "../assets/images/image.jpg";
 
 function ContactUs() {
   return (
@@ -13,7 +12,7 @@ function ContactUs() {
         <div className="grid grid-cols-1  gap-8 md:grid-cols-2">
           <div className="space-y-7 w-full md:w-[400px] ">
             <div className="pb-">
-              <h3 className="uppercase mb-4 font-bold text-[#279EFF] text-4xl ">
+              <h3 className="uppercase text-[#279EFF] font-bold mb-5 text-2xl pb-6 ">
                 Contact Me
               </h3>
               <h2 className="font-semibold text-5xl uppercase text-white ">
@@ -36,9 +35,7 @@ function ContactUs() {
                 <p className="text-xl font-semibold uppercase mb-2 text-[#279EFF]">
                   Email
                 </p>
-                <span className="text-white">
-                  mamfatoudrammeh2002@gmail.com
-                </span>
+                <span className="text-white">gurlcoder@gmail.com</span>
               </div>
             </div>
             <div className="flex space-x-4 text-white">

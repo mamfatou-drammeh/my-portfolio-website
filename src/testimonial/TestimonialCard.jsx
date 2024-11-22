@@ -13,10 +13,10 @@ const TestimonialCard = ({ name, role, testimonial, image }) => {
         </div>
         <div className="ml-3">
           <p className="text-[#ccc] font-semibold">{name}</p>
-          <p className="text-[#279EFF]">{role}</p>
+          <p className="text-[#279EFF] text-[13px]">{role}</p>
         </div>
       </div>
-      <p className="text-[#ccc] italic mb-4 mt-7">{testimonial}</p>
+      <p className="text-[#ccc] italic mb-4 mt-7 text-[14px]">{testimonial}</p>
     </div>
   );
 };
