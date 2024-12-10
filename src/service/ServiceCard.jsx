@@ -1,5 +1,5 @@
 // ServiceCard.js
-import React from 'react';
+import React from "react";
 
 const ServiceCard = ({ title, description, icon }) => {
   return (
