@@ -1,55 +1,66 @@
-// App.js
 import React from "react";
-import ProfolioCard from "../profolio/ProfolioCard";
+import PortfolioCard from "../profolio/ProfolioCard";
+import Container from "../container/Container";
 import image1 from "../assets/images/sts.png";
 import image2 from "../assets/images/bge.png";
 import image3 from "../assets/images/gp.png";
 import image4 from "../assets/images/becl.png";
-import Container from "../container/Container";
 import serviceBg from "../assets/images/service-bg.jpg";
 
-const Profolios = () => {
-  const portfolioItems = [
-    {
-      image: image1,
-      link: "https://stspictures.gm",
-    },
-    {
-      image: image2,
-      link: "https://www.babougaienterprise.com/",
-    },
-    {
-      image: image3,
-      link: "https://www.goldenpropertiesgm.com/",
-    },
-    {
-      image: image4,
-      link: "https://www.becl.gm/",
-    },
-  ];
+const portfolioItems = [
+  {
+    title: "STS Pictures",
+    description: "Photography and videography services",
+    image: image1,
+    link: "https://stspictures.gm",
+  },
+  {
+    title: "Babouga Enterprise",
+    description: "Business solutions and consulting",
+    image: image2,
+    link: "https://www.babougaienterprise.com/",
+  },
+  {
+    title: "Golden Properties",
+    description: "Real estate and property management",
+    image: image3,
+    link: "https://www.goldenpropertiesgm.com/",
+  },
+  {
+    title: "BECL",
+    description: "Business and engineering consultancy",
+    image: image4,
+    link: "https://www.becl.gm/",
+  },
+];
 
+const Portfolios = () => {
   return (
-    <div
-      className="py-20 bg-black/90 bg-blend-overlay"
+    <section
+      className="py-16 md:py-20 bg-black bg-opacity-90 bg-blend-overlay bg-cover bg-center"
       style={{
-        backgroundSize: "cover",
         backgroundImage: `url(${serviceBg})`,
       }}
-      id="profolios"
+      id="portfolios"
     >
       <Container>
-        <h4 className="uppercase text-[#279EFF] font-bold mb-5 text-2xl pb-6">
-          Porfolio
-        </h4>
-        y
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
+        <h2 className="uppercase text-[#279EFF] font-bold mb-8 text-2xl md:text-3xl text-center md:text-left">
+          Portfolio
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           {portfolioItems.map((item, index) => (
-            <ProfolioCard key={index} image={item.image} link={item.link} />
+            <PortfolioCard
+              key={index}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              link={item.link}
+            />
           ))}
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
-export default Profolios;
+export default Portfolios;

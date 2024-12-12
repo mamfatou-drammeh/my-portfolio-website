@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import mam from "../assets/images/mam.png";
-import logo from "../assets/images/logo1.png";
+import logo from "../assets/images/logo2.png";
 import Container from "../container/Container";
 
 const navItems = [
